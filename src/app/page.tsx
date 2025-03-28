@@ -1,5 +1,8 @@
+"use client"
+
 import { AboutMe } from "@/components/AboutMe";
 import { Banner } from "@/components/Banner";
+import { BtnDownPage } from "@/components/BtnDownPage";
 import { Header } from "@/components/Header";
 
 export default function Home() {
@@ -8,10 +11,14 @@ export default function Home() {
       <div className="h-screen bg-cover bg-gradient-to-b from-amber-950 to-neutral-900">
         <Header />
         <Banner />
+        <div className="flex justify-center">
+          <BtnDownPage />
+        </div>
       </div>
-      <div className="container mx-auto">
+      <div className="container mx-auto" id="aboutme">
         <AboutMe />
       </div>
+
     </div>
   );
 }
