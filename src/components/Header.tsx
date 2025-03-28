@@ -12,7 +12,7 @@ export const Header = () => {
                 </h3>
                 <div className="flex justify-around text-neutral-300 font-poppins font-medium">
                     <NavItem>About Me</NavItem>
-                    <NavItem>Graduation</NavItem>
+                    <NavItem>Education</NavItem>
                     <NavItem>Certifieds</NavItem>
                     <NavItem>Projects</NavItem>
                 </div>
