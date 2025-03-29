@@ -13,7 +13,7 @@ export const Header = () => {
                 <div className="flex justify-around text-neutral-300 font-poppins font-medium">
                     <NavItem>About Me</NavItem>
                     <NavItem>Education</NavItem>
-                    <NavItem>Certifieds</NavItem>
+                    <NavItem>Certificates</NavItem>
                     <NavItem>Projects</NavItem>
                 </div>
             </nav>
