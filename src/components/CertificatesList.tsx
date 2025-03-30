@@ -19,9 +19,9 @@ export const CertificatesList = () => {
                         bgColor(certificate)
                     }
                     href={certificate.image && certificate.image}
+                    title={certificate.image ? 'Certified' : 'Certified in progress'}
                     target="_blank"
                 >
-
                     <Image
                         src={certificate.icon}
                         width={70}

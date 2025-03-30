@@ -31,15 +31,11 @@ export const certificates: Certificate[] = [
         image: 'https://alunos.b7web.com.br/media/certificates/certificado_850464.jpg'
     },
     {
-        name: 'Tailwind',
-        icon: '/imgs/tailwindcss.jpg',
-        complete: false
-    },
-    {
         name: 'Node.js',
         icon: '/imgs/nodejs.jpg',
         complete: false
     },
+
     {
         name: 'React.js',
         icon: '/imgs/reactjs.jpg',
@@ -50,4 +46,19 @@ export const certificates: Certificate[] = [
         icon: '/imgs/nextjs.jpg',
         complete: false
     },
+    {
+        name: 'Python',
+        icon: '/imgs/python.png',
+        complete: false
+    },
+    {
+        name: 'Java',
+        icon: '/imgs/java.png',
+        complete: false
+    },
+    {
+        name: 'Tailwind',
+        icon: '/imgs/tailwindcss.jpg',
+        complete: false
+    }
 ]

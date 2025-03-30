@@ -17,18 +17,13 @@ export default function Home() {
           <BtnDownPage />
         </div>
       </div>
-
       <div className="container mx-auto" id="aboutme">
         <AboutMe />
       </div>
-      <div className="flex mx-auto justify-around mt-10 py-50 bg-gradient-to-b from-neutral-900 via-amber-950 to-neutral-900">
+      <div className="flex mx-auto justify-evenly py-50 bg-gradient-to-b from-neutral-900 via-amber-950 to-neutral-900">
         <Education />
-        <div>
-          <Certificates />
-        </div>
+        <Certificates />
       </div>
-
-
     </div>
   );
 }
