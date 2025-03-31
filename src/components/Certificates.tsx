@@ -5,6 +5,7 @@ type Props = {
     itemList: [];
 }
 
+
 export const Certificates = () => {
     return (
         <div className="flex flex-col items-center">

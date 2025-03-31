@@ -6,6 +6,7 @@ import { BtnDownPage } from "@/components/BtnDownPage";
 import { Certificates } from "@/components/Certificates";
 import { Education } from "@/components/Education";
 import { Header } from "@/components/Header";
+import { Projects } from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -20,10 +21,14 @@ export default function Home() {
       <div className="container mx-auto" id="aboutme">
         <AboutMe />
       </div>
-      <div className="flex mx-auto justify-evenly py-50 bg-gradient-to-b from-neutral-900 via-amber-950 to-neutral-900">
+      <div className="flex flex-col mx-auto justify-evenly py-50 bg-gradient-to-b
+       from-neutral-900 via-amber-950 to-neutral-900
+        lg:flex-row">
         <Education />
         <Certificates />
       </div>
+
+      <Projects />
     </div>
   );
 }
