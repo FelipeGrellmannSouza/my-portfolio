@@ -5,6 +5,23 @@
   --foreground: #171717;
 }
 
+/* Swipper configuration */
+.custom-swiper-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FF6000 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #FF6000 !important;
+}
+
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
