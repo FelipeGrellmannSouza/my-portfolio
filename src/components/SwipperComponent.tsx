@@ -51,7 +51,7 @@ export const SwipperComponent = () => {
                                             width={300}
                                             height={300}
                                             alt={project.title + ' print'}
-                                            className="w-full h-full object-scale-down"
+                                            className="w-full h-full object-scale-downS"
                                         />
                                     </div>
                                 }

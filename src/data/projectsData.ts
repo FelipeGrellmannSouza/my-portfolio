@@ -47,10 +47,17 @@ export const projects: Project[] = [
         github: 'https://github.com/FelipeGrellmannSouza'
     },
     {
-        title: 'Working in Progress',
-        desc: 'Working in progress',
-        image: '/imgs/coming-soon.png',
-        github: 'https://github.com/FelipeGrellmannSouza',
-        url: 'https://www.google.com',
+        title: 'Google Clone',
+        desc: 'Clone do google apenas com HTML e CSS.',
+        image: '/imgs/google_clone.png',
+        technologies: ['HTML', 'CSS'],
+        github: 'https://github.com/FelipeGrellmannSouza/clone_google',
+    },
+    {
+        title: 'Landing Page StarBucks',
+        desc: 'Layout de uma landing page criada com HTML e CSS do StarBucks',
+        image: '/imgs/starbucks.png',
+        technologies: ['HTML', 'CSS'],
+        github: 'https://github.com/FelipeGrellmannSouza/starbucksHTML',
     }
 ]
