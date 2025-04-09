@@ -1,17 +1,15 @@
 import { scrollToTarget } from "@/utils/scrollUtils";
-import { ReactNode } from "react";
-
 
 type Props = {
     children: string;
+    onClick?: () => void;
 }
 
-export const NavItem = ({ children }: Props) => {
+export const NavItem = ({ children, onClick }: Props) => {
     return (
         <button className="mx-2 group hover:cursor-pointer" onClick={() => {
-
-
-            scrollToTarget(children.toLowerCase().replaceAll(' ', ''))
+            scrollToTarget(children.toLowerCase().replaceAll(' ', ''));
+            onClick?.();
         }}>
             <span className="group-hover:text-amber-700 transition-colors duration-300">
                 {children}

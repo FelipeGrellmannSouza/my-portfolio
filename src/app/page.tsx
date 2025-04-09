@@ -12,7 +12,7 @@ import { Projects } from "@/components/Projects";
 export default function Home() {
   return (
     <div className={`bg-neutral-900 font-poppins h-max`}>
-      <div className="h-screen bg-cover bg-gradient-to-b from-amber-950 to-neutral-900">
+      <div className="h-screen bg-cover bg-gradient-to-b from-amber-950 to-neutral-900 pt-[46px]">
         <Header />
         <Banner />
         <div className="flex justify-center">

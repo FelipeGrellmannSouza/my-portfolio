@@ -1,22 +1,40 @@
+import { useState } from "react";
 import { NavItem } from "./NavItem"
 
 export const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
-        <header>
-            <nav className="flex container m-auto items-center justify-between">
-                <h3 className="font-kanit text-2xl transition-all duration-500 hover:cursor-pointer 
-                              text-neutral-300 hover:text-orange-400 
-                              hover:drop-shadow-[0_0_15px_rgba(217,119,6,0.7)] "
+        <header className="fixed top-0 left-0 w-full z-50 bg-black/1 backdrop-blur-md">
+            <nav className="flex container m-auto items-center justify-between px-4 py-3">
+                <h3
+                    className="font-kanit text-2xl transition-all duration-500 hover:cursor-pointer text-neutral-300 hover:text-orange-400 hover:drop-shadow-[0_0_15px_rgba(217,119,6,0.7)] "
                 >
                     Felipe Grellmann
                 </h3>
-                <div className="flex justify-around text-neutral-300 font-poppins font-medium">
+
+                <button
+                    onClick={() => setIsOpen(!isOpen)}
+                    className="text-neutral-300 text-3xl md:hidden"
+                >
+                    {isOpen ? 'x' : '≡'}
+                </button>
+
+                <div className="hidden md:flex space-x-6 text-neutral-300 font-poppins font-medium">
                     <NavItem>About Me</NavItem>
                     <NavItem>Education</NavItem>
                     <NavItem>Certificates</NavItem>
                     <NavItem>Projects</NavItem>
                 </div>
             </nav>
+            {isOpen && (
+                <div className="md:hidden flex flex-col items-start gap-4 p-3 text-neutral-300 rounded-md font-poppins font-medium">
+                    <NavItem onClick={() => setIsOpen(false)}>About Me</NavItem>
+                    <NavItem onClick={() => setIsOpen(false)}>Education</NavItem>
+                    <NavItem onClick={() => setIsOpen(false)}>Certificates</NavItem>
+                    <NavItem onClick={() => setIsOpen(false)}>Projects</NavItem>
+                </div>
+            )}
         </header>
     )
 }
