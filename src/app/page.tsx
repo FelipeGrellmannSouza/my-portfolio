@@ -22,11 +22,12 @@ export default function Home() {
       <div className="container mx-auto" id="aboutme">
         <AboutMe />
       </div>
-      <div className="flex flex-col mx-auto justify-evenly py-50 bg-gradient-to-b
-       from-neutral-900 via-amber-950 to-neutral-900
-        lg:flex-row">
-        <Education />
-        <Certificates />
+      <div className="bg-gradient-to-b
+       from-neutral-900 via-amber-950 to-neutral-900">
+        <div className="flex flex-col mx-auto justify-evenly py-50 lg:flex-row">
+          <Education />
+          <Certificates />
+        </div>
       </div>
       <Projects />
       <Footer />

@@ -16,29 +16,35 @@ type Props = {
 export const EducationCard = ({ data }: Props) => {
     return (
         <>
-            {data.map(curse =>
-                <div key={curse.curse}
-                    className='flex items-center mb-5 p-10 w-110 h-50 rounded-md bg-white/5 text-white transition-all duration-300 hover:bg-white/20 hover:scale-[1.03]'
+            {data.map(course =>
+                <div key={course.curse}
+                    className='
+                        flex items-center justify-between 
+                        mb-5 px-5 py-5 
+                        w-full min-h-30 max-h-50
+                        rounded-md 
+                        bg-white/5 text-white
+                        transition-all duration-300 
+                        hover:bg-white/20 hover:scale-[1.03]
+                    '
                 >
-                    <div className='flex-1'>
-                        <h3 className='text-3xl'>{curse.name}</h3>
-                        <div>{curse.curse}</div>
-                        <div>{curse.local}</div>
-                        <div>{curse.date}</div>
+                    <div className='flex-1 text-xs sm:text-sm md:text-lg'>
+                        <h3 className='mr-[20px] sm:text-xl sm:mr-5 md:text-2xl'>{course.curse}</h3>
+                        <div className=''>{course.name}</div>
+                        <div>{course.local}</div>
+                        <div>{course.date}</div>
                     </div>
                     <div>
                         <Image
-                            src={curse.img}
+                            src={course.img}
                             width={100}
-                            height={0}
+                            height={100}
                             alt='logo da faculdade'
-                            className='flex-2 rounded-md'
+                            className='rounded-md h-[80px] w-[80px] sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px] object-contain'
                         />
                     </div>
                 </div>
             )}
-
-
         </>
     );
 }

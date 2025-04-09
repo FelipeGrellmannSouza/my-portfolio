@@ -15,7 +15,7 @@ export const CertificatesList = () => {
             {certificates.map((certificate) =>
                 <a key={certificate.name}
                     className={
-                        " hover:cursor-not-allowed flex flex-col justify-center items-around p-10 rounded-xl h-[130px] w-[130px] transition-all duration-300 " +
+                        " hover:cursor-not-allowed flex flex-col justify-center items-center items-around  rounded-xl h-[110px] w-[110px] sm:h-[150px] sm:w-[150px] transition-all duration-300 " +
                         bgColor(certificate)
                     }
                     href={certificate.image && certificate.image}
@@ -25,10 +25,11 @@ export const CertificatesList = () => {
                     <Image
                         src={certificate.icon}
                         width={70}
-                        height={0}
+                        height={70}
                         alt={certificate.name + " icon"}
+                        className="w-12 h-12 sm:w-20 sm:h-20"
                     />
-                    <h5 className="  flex justify-center text-xl mt-0.5">{certificate.name}</h5>
+                    <h5 className="flex justify-center text-md sm:text-xl mt-0.5">{certificate.name}</h5>
                 </a >
             )}
         </>
