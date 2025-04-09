@@ -5,6 +5,7 @@ import { Banner } from "@/components/Banner";
 import { BtnDownPage } from "@/components/BtnDownPage";
 import { Certificates } from "@/components/Certificates";
 import { Education } from "@/components/Education";
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Projects } from "@/components/Projects";
 
@@ -27,8 +28,8 @@ export default function Home() {
         <Education />
         <Certificates />
       </div>
-
       <Projects />
+      <Footer />
     </div>
   );
 }
