@@ -21,18 +21,18 @@ export const Header = () => {
                 </button>
 
                 <div className="hidden md:flex space-x-6 text-neutral-300 font-poppins font-medium">
-                    <NavItem>About Me</NavItem>
-                    <NavItem>Education</NavItem>
-                    <NavItem>Certificates</NavItem>
-                    <NavItem>Projects</NavItem>
+                    <NavItem>Sobre</NavItem>
+                    <NavItem>Graduações</NavItem>
+                    <NavItem>Tecnologias</NavItem>
+                    <NavItem>Projetos</NavItem>
                 </div>
             </nav>
             {isOpen && (
                 <div className="md:hidden flex flex-col items-start gap-4 p-3 text-neutral-300 rounded-md font-poppins font-medium">
-                    <NavItem onClick={() => setIsOpen(false)}>About Me</NavItem>
-                    <NavItem onClick={() => setIsOpen(false)}>Education</NavItem>
-                    <NavItem onClick={() => setIsOpen(false)}>Certificates</NavItem>
-                    <NavItem onClick={() => setIsOpen(false)}>Projects</NavItem>
+                    <NavItem onClick={() => setIsOpen(false)}>Sobre</NavItem>
+                    <NavItem onClick={() => setIsOpen(false)}>Graduações</NavItem>
+                    <NavItem onClick={() => setIsOpen(false)}>Tecnologias</NavItem>
+                    <NavItem onClick={() => setIsOpen(false)}>Projetos</NavItem>
                 </div>
             )}
         </header>

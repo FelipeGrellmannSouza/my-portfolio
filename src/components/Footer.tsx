@@ -7,7 +7,7 @@ export const Footer = () => {
                 <div className="flex justify-center">
                     <ul className="flex justify-between items-center w-[300px]  mx-[40px]">
                         <li>
-                            <a href="file:///C:/Users/felip/Documents/Curriculo/www.linkedin.com/in/felipegrellmann">
+                            <a href="https://www.linkedin.com/in/felipegrellmann" target="_blank">
                                 <Image
                                     className="hover:drop-shadow-[0_0_6px_rgba(255,255,255)] hover:cursor-pointer"
                                     src={'/imgs/linkedin.png'}
@@ -52,7 +52,7 @@ export const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <p className="text-center mt-10 text-gray-400 text-sm md:text-base">© 2025 Felipe Grellmann. All rights reserved.</p>
+                <p className="text-center mt-10 text-gray-400 text-sm md:text-base">© 2025 Felipe Grellmann. Todos os Direitos Reservados.</p>
 
             </div>
         </footer>

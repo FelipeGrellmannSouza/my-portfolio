@@ -19,7 +19,7 @@ export default function Home() {
           <BtnDownPage />
         </div>
       </div>
-      <div className="container mx-auto" id="aboutme">
+      <div className="container mx-auto">
         <AboutMe />
       </div>
       <div className="bg-gradient-to-b

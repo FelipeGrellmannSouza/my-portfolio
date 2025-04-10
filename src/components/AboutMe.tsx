@@ -4,8 +4,8 @@ import Image from "next/image";
 export const AboutMe = () => {
     return (
         <div className="container mx-auto flex flex-col justify-between items-center mt-10">
-            <h2 className="text-5xl mb-10">
-                About Me
+            <h2 className="text-5xl mb-10" id='sobre'>
+                Sobre
             </h2>
             <div className='
                 flex flex-col items-center mx-[5%] justify-between
