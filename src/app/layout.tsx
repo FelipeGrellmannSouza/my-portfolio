@@ -14,12 +14,10 @@ const poppins = Poppins({
   weight: ['100', '300', '400']
 });
 
-
 export const metadata: Metadata = {
   title: "Felipe Grellmann",
-  description: "Veja o portifóliio de Felipe Grellmann, Veja mais sobre ele, seus projetos pessoais e suas habilidade.",
+  description: "Veja o portifóliio de Felipe Grellmann, Veja mais sobre sua trajetória no mundo da técnologia, seus projetos e suas habilidades",
 };
-
 
 export default function RootLayout({
   children,
