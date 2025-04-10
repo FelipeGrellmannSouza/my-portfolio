@@ -5,7 +5,7 @@ export const Footer = () => {
         <footer className="pt-30 pb-10 bg-gradient-to-b from-neutral-900 to-black">
             <div className="container mx-auto">
                 <div className="flex justify-center">
-                    <ul className="flex justify-between items-center min-w-[300px] max-w-[320px]">
+                    <ul className="flex justify-between items-center w-[300px]  mx-[40px]">
                         <li>
                             <a href="file:///C:/Users/felip/Documents/Curriculo/www.linkedin.com/in/felipegrellmann">
                                 <Image
