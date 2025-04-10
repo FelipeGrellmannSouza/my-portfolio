@@ -1,20 +1,36 @@
 import React from 'react'
-import { MyPhoto } from "@/components/MyPhoto";
+import Image from "next/image";
 
 export const AboutMe = () => {
     return (
-        <div className="container mx-auto flex justify-between items-center mt-10 max-w-300 pb-10">
-            <div className='flex-1/3 w-100 pr-15'>
-                <h2 className="text-5xl">
-                    About Me
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div className="container mx-auto flex flex-col justify-between items-center mt-10">
+            <h2 className="text-5xl mb-10">
+                About Me
+            </h2>
+            <div className='
+                flex flex-col items-center mx-[5%] justify-between
+                sm:flex-row-reverse sm:w-full sm:container sm:px-[20px] sm:justify-between
+                md:justify-center 
+            '>
+                <Image
+                    src="/imgs/felipe3.jpg"
+                    alt="Minha Foto"
+                    width={250}
+                    height={250}
+                    className="h-50 w-50 mb-5 rounded-[30px] drop-shadow-[0_0_6px_rgba(217,119,6,0.7)] 
+                    transition-all duration-500 hover:drop-shadow-[0_0_20px_rgba(217,119,6)] hover:scale-[1.04]"
+                />
+                <p className='text-sm sm:text-md sm:max-w-[500] md:mr-10'>
+                    Estudante de Sistemas da informação com formação técnica em TI e graduação em Analise
+                    Desenvolvimento de Sistemas. Sou dedicado, tenho facilidade de aprendizado e de
+                    adaptação. Sempre busco estar em constante aprimoramento através de cursos e estudos,
+                    possuo conhecimentos em React, Typescript, Java, Python, HTML e CSS, entre outras
+                    tecnologias. Estou em busca de uma oportunidade de estágio para aplicar e expandir minhas
+                    habilidades, contribuindo de forma proativa para a empresa e para meu desenvolvimento
+                    profissional
                 </p>
             </div>
-            <div className='flex justify-end flex-1'>
-                <MyPhoto />
-            </div>
+
         </div>
     )
 }
