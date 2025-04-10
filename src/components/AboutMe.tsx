@@ -21,13 +21,13 @@ export const AboutMe = () => {
                     transition-all duration-500 hover:drop-shadow-[0_0_20px_rgba(217,119,6)] hover:scale-[1.04]"
                 />
                 <p className='text-sm sm:text-md sm:max-w-[500] md:mr-10'>
-                    Estudante de Sistemas da informação com formação técnica em TI e graduação em Analise
+                    Sou um estudante de Sistemas da informação com formação técnica em TI e graduado em Analise
                     Desenvolvimento de Sistemas. Sou dedicado, tenho facilidade de aprendizado e de
                     adaptação. Sempre busco estar em constante aprimoramento através de cursos e estudos,
                     possuo conhecimentos em React, Typescript, Java, Python, HTML e CSS, entre outras
                     tecnologias. Estou em busca de uma oportunidade de estágio para aplicar e expandir minhas
                     habilidades, contribuindo de forma proativa para a empresa e para meu desenvolvimento
-                    profissional
+                    profissional.
                 </p>
             </div>
 
